@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+   <head>
+      <meta charset="utf-8">
+      <title>Allotransplantation</title>
+      <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body style="background-image: url({% static 'home/images/home.jpg' %}); background-size: cover; background-repeat: no-repeat;">
+   <script>
+
+{% for m in messages %}
+      alert('{{ m }}');
+{% endfor %}
+
+</script>
+   <nav style="background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );">
+         <div class="logo">
+            Allograft
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a class="active" href="#">HOME</a></li>
+            <li><a href="/donor_login/">DONOR</a></li>
+            <li><a href="/patient_login/">PATIENT</a></li>
+            <li><a href="/admin_login/">ADMIN</a></li>
+            <li><a href="/re_login/">RESEARCH</a></li>
+         </ul>
+      </nav>
+      <div class="content">
+         <div>
+
+         </div>
+         <div>
+
+         </div>
+      </div>
+   </body>
+</html>
